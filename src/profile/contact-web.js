@@ -1,16 +1,17 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons/faUser";
+import { faFlag } from "@fortawesome/free-solid-svg-icons/faFlag";
 
-const ContactWeb = ({ webOfficial, webPersonal, capEmail, facebook, twitter }) => {
+
+const ContactWeb = ({ webOfficial, webPersonal }) => {
   const CONTACT_BUTTONS = [
-    { label: "Email", value: capEmail },
-    { label: "Facebook", value: facebook },
-    { label: "Twitter", value: twitter },
-    { label: "Official website", value: webOfficial },
-    { label: "Personal website", value: webPersonal },
+    { label: "Official website", value: webOfficial, icon: faUser },
+    { label: "Personal website", value: webPersonal, icon: faFlag },
   ];
   return (
-    <div className="w-full flex flex-col gap-2">
-      {CONTACT_BUTTONS.map(({ label, value }) => {
+    <div className="w-full flex flex-col gap-3">
+      {CONTACT_BUTTONS.map(({ label, value, icon }) => {
         if (!value) {
           return null;
         }
@@ -21,8 +22,8 @@ const ContactWeb = ({ webOfficial, webPersonal, capEmail, facebook, twitter }) =
             target="_blank"
             rel="noreferrer nofollower"
           >
-            <button className="rounded w-full text-center uppercase text-xs font-bold px-4 py-2 text-white bg-green-trib hover:bg-opacity-60 transition-all duration-300">
-              {label}
+            <button className="rounded w-full  uppercase text-xs font-bold px-4 py-3 text-white bg-green-trib hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+              <FontAwesomeIcon icon={icon} className="mr-2" /> {label}
             </button>
           </a>
         );

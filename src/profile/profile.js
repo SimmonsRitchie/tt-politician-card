@@ -1,4 +1,4 @@
-import Vitals from "./vitals";
+import ContactPhone from "./contact-phone";
 import ContactWeb from "./contact-web";
 import ContactSocial from "./contact-social";
 import Top from "./top";
@@ -8,11 +8,11 @@ const Profile = ({ data }) => {
     name,
     headshot: imgSrc,
     hometown,
-    capitol_address: capAddress,
+    capitol_email: capEmail,
     facebook,
     twitter,
-    capitol_email: capEmail,
     capitol_phone: capPhone,
+    capitol_address: capAddress,
     district_phone: distPhone,
     website_official: webOfficial,
     website_personal: webPersonal,
@@ -31,7 +31,11 @@ const Profile = ({ data }) => {
         facebook={facebook}
         twitter={twitter}
       />
-      <Vitals capPhone={capPhone} distPhone={distPhone} capAddress={capAddress} />
+      <ContactPhone
+        capPhone={capPhone}
+        distPhone={distPhone}
+        capAddress={capAddress}
+      />
 
       <ContactWeb webOfficial={webOfficial} webPersonal={webPersonal} />
     </div>
