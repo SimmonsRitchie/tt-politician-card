@@ -21,7 +21,7 @@ const ContactWeb = ({ webOfficial, webPersonal, capEmail, facebook, twitter }) =
             target="_blank"
             rel="noreferrer nofollower"
           >
-            <button className="rounded w-full text-center uppercase text-xs font-semibold px-4 py-2 text-white bg-green-trib">
+            <button className="rounded w-full text-center uppercase text-xs font-semibold px-4 py-2 text-white bg-green-trib hover:bg-opacity-60">
               {label}
             </button>
           </a>

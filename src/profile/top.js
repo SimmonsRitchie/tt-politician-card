@@ -11,7 +11,7 @@ const Top = ({ imgSrc, headshotAlt, name, hometown }) => {
         alt={headshotAlt}
       />
       <div className="mb-5">
-        <h3 className="text-gray-900 text-2xl text-center font-sans font-light">
+        <h3 className="text-gray-800 text-2xl text-center font-sans font-semibold">
           {name}
         </h3>
         <h5 className="text-gray-500 text-center">{hometown}</h5>

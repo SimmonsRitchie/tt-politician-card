@@ -18,7 +18,7 @@ function App() {
   }
   console.log("data", politicianData);
   return (
-    <div className="w-full h-full p-4 flex justify-center items-center">
+    <div className="w-full h-full px-4 py-6 flex justify-center items-center">
       <Profile data={politicianData} />
     </div>
   );
