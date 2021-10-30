@@ -13,7 +13,8 @@ module.exports = {
         },
         brand: '#ffc200',
         green: {
-          "trib": '#348094'
+          "trib": '#348094',
+          "trib-light": '#4aa6bf'
         }
       },
     },

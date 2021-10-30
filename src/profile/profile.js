@@ -19,25 +19,26 @@ const Profile = ({ data }) => {
   } = data;
   const headshotAlt = `Headshot of ${name}`;
   return (
-    <div className="flex flex-col w-full sm:w-80 gap-y-1 justify-center items-center py-11 px-11 rounded-sm text-gray-800 bg-gradient-to-b from-gray-50 to-gray-100 shadow">
+    <div className="flex flex-col w-full sm:w-96 gap-y-1 justify-center items-center rounded-lg text-gray-800 bg-gradient-to-b from-gray-50 to-gray-100 shadow">
       <Top
         imgSrc={imgSrc}
         headshotAlt={headshotAlt}
         name={name}
         hometown={hometown}
       />
-      <ContactSocial
-        capEmail={capEmail}
-        facebook={facebook}
-        twitter={twitter}
-      />
-      <ContactPhone
-        capPhone={capPhone}
-        distPhone={distPhone}
-        capAddress={capAddress}
-      />
-
-      <ContactWeb webOfficial={webOfficial} webPersonal={webPersonal} />
+      <div className="pb-11 px-11">
+        <ContactSocial
+          capEmail={capEmail}
+          facebook={facebook}
+          twitter={twitter}
+        />
+        <ContactPhone
+          capPhone={capPhone}
+          distPhone={distPhone}
+          capAddress={capAddress}
+        />
+        <ContactWeb webOfficial={webOfficial} webPersonal={webPersonal} />
+      </div>
     </div>
   );
 };

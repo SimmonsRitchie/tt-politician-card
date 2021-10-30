@@ -27,7 +27,7 @@ const ContactSocial = ({ capEmail, facebook, twitter }) => {
     },
   ];
   return (
-    <div className="w-full mb-4 flex gap-x-6 justify-center items-center ">
+    <div className="w-full mb-6 flex gap-x-6 justify-center items-center ">
       {CONTACT_BUTTONS.map(({ label, value, icon, linkFormatter }) => {
         if (!value) {
           return null;
