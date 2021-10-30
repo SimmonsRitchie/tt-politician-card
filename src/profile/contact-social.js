@@ -39,9 +39,11 @@ const ContactSocial = ({ capEmail, facebook, twitter }) => {
             href={cleanUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-600 text-sm"
           >
-            <FontAwesomeIcon className="text-xl text-center text-green-trib hover:text-opacity-60" icon={icon} />
+            <FontAwesomeIcon
+              className="text-xl text-center text-green-trib hover:text-opacity-60 transition-all duration-300"
+              icon={icon}
+            />
           </a>
         );
       })}
