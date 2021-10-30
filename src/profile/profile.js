@@ -1,3 +1,4 @@
+import React from 'react';
 import ContactPhone from "./contact-phone";
 import ContactWeb from "./contact-web";
 import ContactSocial from "./contact-social";
@@ -17,10 +18,11 @@ const Profile = ({ data }) => {
     district_phone: distPhone,
     website_official: webOfficial,
     website_personal: webPersonal,
+    directory_url: dirUrl,
   } = data;
   const headshotAlt = `Headshot of ${name}`;
   return (
-    <div
+    <article
     style={{minWidth: '250px'}}
     className="flex flex-col w-full sm:w-96 gap-y-1 justify-center items-center rounded-lg text-gray-800 bg-gradient-to-b from-gray-50 to-gray-trib-light shadow">
       <Top
@@ -40,9 +42,9 @@ const Profile = ({ data }) => {
           distPhone={distPhone}
           capAddress={capAddress}
         />
-        <ContactWeb webOfficial={webOfficial} webPersonal={webPersonal} />
+        <ContactWeb webOfficial={webOfficial} webPersonal={webPersonal} dirUrl={dirUrl} />
       </div>
-    </div>
+    </article>
   );
 };
 

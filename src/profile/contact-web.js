@@ -2,12 +2,14 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons/faUser";
 import { faFlag } from "@fortawesome/free-solid-svg-icons/faFlag";
+import { faInfoCircle } from "@fortawesome/free-solid-svg-icons/faInfoCircle";
+import PropTypes from 'prop-types';
 
-
-const ContactWeb = ({ webOfficial, webPersonal }) => {
+const ContactWeb = ({ webOfficial, webPersonal, dirUrl }) => {
   const CONTACT_BUTTONS = [
     { label: "Official website", value: webOfficial, icon: faUser },
     { label: "Personal website", value: webPersonal, icon: faFlag },
+    { label: "More info", value: dirUrl, icon: faInfoCircle },
   ];
   return (
     <div className="w-full flex flex-col gap-3">
@@ -31,5 +33,11 @@ const ContactWeb = ({ webOfficial, webPersonal }) => {
     </div>
   );
 };
+
+ContactWeb.propTypes = {
+  webOfficial: PropTypes.string,
+  webPersonal: PropTypes.string,
+  dirUrl: PropTypes.string,
+}
 
 export default ContactWeb;
