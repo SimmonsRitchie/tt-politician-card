@@ -6,17 +6,17 @@ const Top = ({ imgSrc, headshotAlt, name, hometown }) => {
     <div className="w-full flex flex-col justify-center items-center mb-4">
       <div className="relative w-full h-28 mb-14 bg-gradient-to-br from-green-trib to-green-trib-light  flex justify-center items-center rounded-tr-lg rounded-tl-lg ">
         <img
-          className="absolute top-1/2 rounded-full w-24 ring-4 ring-gray-50
+          className="absolute top-1/2 rounded-full w-24 h-24 ring-4 ring-gray-50
               border-white"
           src={imgSrc}
           alt={headshotAlt}
         />
       </div>
       <div className="px-11">
-        <h3 className="text-gray-800 text-2xl text-center font-sans font-semibold">
+        <h4 className="text-gray-800 text-2xl text-center font-sans font-semibold">
           {name}
-        </h3>
-        <h5 className="text-gray-500 text-center">{hometown}</h5>
+        </h4>
+        <h5 className="text-gray-700 text-center">{hometown}</h5>
       </div>
     </div>
   );

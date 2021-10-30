@@ -6,7 +6,7 @@ import Profile from "./profile";
 function App() {
   const [politicianData, setPoliticianData] = useState();
   useEffect(() => {
-    fetch("https://www.texastribune.org/api/v2/politicians/1254/")
+    fetch("https://www.texastribune.org/api/v2/politicians/3513/")
       .then((response) => response.json())
       .then((data) => {
         setPoliticianData(data);

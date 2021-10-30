@@ -26,7 +26,7 @@ const Profile = ({ data }) => {
         name={name}
         hometown={hometown}
       />
-      <div className="pb-11 px-11">
+      <div className="pb-6 px-6 sm:pb-8 sm:px-8 w-full">
         <ContactSocial
           capEmail={capEmail}
           facebook={facebook}
