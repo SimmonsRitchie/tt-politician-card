@@ -1,10 +1,11 @@
 import React from "react";
 
-const Vitals = ({ age, occupation, phone }) => {
+const Vitals = ({ distPhone, capPhone, capAddress }) => {
   const VITALS = [
-    { label: "Age", value: age },
-    { label: "Occupation", value: occupation },
-    { label: "Capitol phone", value: phone },
+    { label: "Capitol phone", value: capPhone },
+    { label: "District phone", value: distPhone },
+    { label: "Mailing address", value: capAddress },
+
   ];
 
   return (
