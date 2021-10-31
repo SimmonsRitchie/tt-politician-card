@@ -2,7 +2,7 @@
 
 A responsive, mobile-friendly component for displaying contact info for specific Texas politicians. Built with React JS, styled with TailwindCSS, and powered by the Texas Tribune's [politician API](https://www.texastribune.org/api/v2/docs/)
 
-[View demo](https://evening-citadel-25281.herokuapp.com/)
+[View demo](https://tt-politician-card.herokuapp.com/)
 
 ## Getting started
 
