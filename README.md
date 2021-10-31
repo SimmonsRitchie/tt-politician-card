@@ -1,30 +1,43 @@
 # Texas politician contact card
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive, mobile-friendly component for displaying contact info for specific Texas politicians. Built with React JS, styled with TailwindCSS, and powered by the Texas Tribune's [politician API](https://www.texastribune.org/api/v2/docs/)
 
-## Available Scripts
+[View demo](https://evening-citadel-25281.herokuapp.com/)
 
-In the project directory, you can run:
+## Getting started
 
-### `npm start`
+### Install
 
-Runs the app in the development mode.\
+Installation of this project requires Node.js and, preferably [NVM](https://github.com/nvm-sh).
+
+1) To clone the project, run:
+ 
+   `git clone https://github.com/SimmonsRitchie/tt-politician-card.git`
+
+2) If you use (NVM)[https://github.com/nvm-sh], CD into the project directory and run:
+
+   `nvm use`
+
+   If you don't use NVM, ensure you are using the appropriate version of Node as specified in .nvmrc in the root of this project.
+
+3) Cd into the project directory and run:
+ 
+   `npm i`
+
+
+### Local dev
+
+To run in development mode, cd into the project folder and run:
+
+`npm run dev`
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The page will reload if you make edits. You will also see any lint errors in the console.
 
-### `npm test`
+For the production build, run:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ `npm run build`
 
-### `npm run build`
+This bundles the app for production to the `build` folder. It optimizes the build for the best performance. The build is minified and the filenames include the hashes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
