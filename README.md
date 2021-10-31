@@ -14,7 +14,7 @@ Installation of this project requires Node.js and, preferably [NVM](https://gith
 
    `git clone https://github.com/SimmonsRitchie/tt-politician-card.git`
 
-2. If you use (NVM)[https://github.com/nvm-sh], CD into the project directory and run:
+2. If you use [NVM](https://github.com/nvm-sh), CD into the project directory and run:
 
    `nvm use`
 
