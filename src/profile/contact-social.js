@@ -32,7 +32,7 @@ const ContactSocial = ({ capEmail, facebook, twitter }) => {
     },
   ];
   return (
-    <div className="w-full mb-6 flex gap-x-6 justify-center items-center ">
+    <div className="w-full mb-6 flex gap-x-7 justify-center items-center ">
       {CONTACT_BUTTONS.map(({ id, value, icon, alt, linkFormatter }) => {
         if (!value) {
           return null;
@@ -47,7 +47,8 @@ const ContactSocial = ({ capEmail, facebook, twitter }) => {
           >
             <FontAwesomeIcon
             alt={alt}
-              className="text-xl text-center text-green-trib hover:text-opacity-60 transition-all duration-300"
+            style={{fontSize: '24px'}}
+              className="text-center text-green-trib hover:text-opacity-60 transition-all duration-300"
               icon={icon}
             />
           </a>

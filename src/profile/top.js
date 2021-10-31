@@ -17,15 +17,15 @@ const Top = ({ imgSrc, headshotAlt, name, hometown }) => {
             src="user-icon.png"
             alt="anonymous user icon"
             className="absolute top-1/2 rounded-full w-24 h-24 ring-4 ring-gray-50
-            border-white bg-gray-300"
+             bg-gray-300"
           />
         )}
       </div>
-      <div className="px-11">
-        <h4 className="text-gray-800 text-2xl text-center font-sans font-semibold">
+      <div className="w-full px-6">
+        <h4 className="text-gray-800 mb-1 text-2xl text-center font-sans font-semibold">
           {name}
         </h4>
-        <h5 className="text-gray-700 text-center">{hometown}</h5>
+        <h5 className="text-gray-700 text-lg text-center">{hometown}</h5>
       </div>
     </div>
   );
