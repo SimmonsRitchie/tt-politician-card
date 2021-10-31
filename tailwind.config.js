@@ -11,11 +11,11 @@ module.exports = {
         gray: {
           "trib-light": "#F3F3F3",
         },
-        brand: '#ffc200',
+        brand: "#ffc200",
         green: {
-          "trib": '#348094',
-          "trib-light": '#4aa6bf'
-        }
+          trib: "#348094",
+          "trib-light": "#4aa6bf",
+        },
       },
     },
     variants: {

@@ -12,23 +12,21 @@ const ContactSocial = ({ capEmail, facebook, twitter }) => {
       value: capEmail,
       linkFormatter: (value) => `mailto:${value}`,
       icon: faEnvelope,
-      alt: "envelope icon"
+      alt: "envelope icon",
     },
     {
       id: "Facebook",
       value: facebook,
       linkFormatter: (value) => `https://www.facebook.com/${value}`,
       icon: faFacebook,
-      alt: "Facebook logo"
-
+      alt: "Facebook logo",
     },
     {
       id: "Twitter",
       value: twitter,
       linkFormatter: (value) => `https://twitter.com/${value}`,
       icon: faTwitter,
-      alt: "Twitter logo"
-
+      alt: "Twitter logo",
     },
   ];
   return (
@@ -39,15 +37,10 @@ const ContactSocial = ({ capEmail, facebook, twitter }) => {
         }
         const cleanUrl = linkFormatter(value);
         return (
-          <a
-            key={id}
-            href={cleanUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a key={id} href={cleanUrl} target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon
-            alt={alt}
-            style={{fontSize: '24px'}}
+              alt={alt}
+              style={{ fontSize: "24px" }}
               className="text-center text-green-trib hover:text-opacity-60 transition-all duration-300"
               icon={icon}
             />

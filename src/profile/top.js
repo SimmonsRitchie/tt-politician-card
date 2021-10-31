@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+
 const Top = ({ imgSrc, headshotAlt, name, hometown }) => {
   return (
     <div className="w-full flex flex-col justify-center items-center mb-4">

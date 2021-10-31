@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 import ContactPhone from "./contact-phone";
 import ContactWeb from "./contact-web";
 import ContactSocial from "./contact-social";
 import Top from "./top";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 const Profile = ({ data }) => {
   const {
@@ -23,8 +23,9 @@ const Profile = ({ data }) => {
   const headshotAlt = `Headshot of ${name}`;
   return (
     <article
-    style={{minWidth: '250px'}}
-    className="flex flex-col w-full sm:w-96 gap-y-1 justify-center items-center rounded-lg text-gray-800 bg-gradient-to-b from-gray-50 to-gray-trib-light shadow">
+      style={{ minWidth: "250px" }}
+      className="flex flex-col w-full sm:w-96 gap-y-1 justify-center items-center rounded-lg text-gray-800 bg-gradient-to-b from-gray-50 to-gray-trib-light shadow"
+    >
       <Top
         imgSrc={imgSrc}
         headshotAlt={headshotAlt}
@@ -42,7 +43,11 @@ const Profile = ({ data }) => {
           distPhone={distPhone}
           capAddress={capAddress}
         />
-        <ContactWeb webOfficial={webOfficial} webPersonal={webPersonal} dirUrl={dirUrl} />
+        <ContactWeb
+          webOfficial={webOfficial}
+          webPersonal={webPersonal}
+          dirUrl={dirUrl}
+        />
       </div>
     </article>
   );
@@ -62,6 +67,6 @@ Profile.propTypes = {
     website_official: PropTypes.string,
     website_personal: PropTypes.string,
   }).isRequired,
-}
+};
 
 export default Profile;
